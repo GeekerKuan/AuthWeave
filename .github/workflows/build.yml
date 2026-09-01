@@ -2,6 +2,8 @@ name: build
 
 on:
   push:
+    branches:
+      - main
   pull_request:
 
 permissions:
@@ -40,7 +42,9 @@ jobs:
           java-version: ${{ matrix.java }}
           cache: gradle
       - uses: gradle/actions/setup-gradle@v4
-      - run: .\gradlew.bat clean build -Ptarget_version=${{ matrix.minecraft }} --stacktrace
+      - run: .\gradlew.bat clean build "-Ptarget_version=$env:TARGET_VERSION" --stacktrace
+        env:
+          TARGET_VERSION: ${{ matrix.minecraft }}
       - uses: actions/upload-artifact@v4
         with:
           name: server-login-profiles-${{ matrix.minecraft }}
