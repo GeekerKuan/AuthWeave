@@ -1,0 +1,18 @@
+[
+  {"minecraft":"1.21","java":21,"fabricLoader":"0.19.3","fabricLoaderRange":">=0.16.0","neoForge":"21.0.167","neoForgeLoaderRange":"[4,)","neoForgeChannel":"stable"},
+  {"minecraft":"1.21.1","java":21,"fabricLoader":"0.19.3","fabricLoaderRange":">=0.16.0","neoForge":"21.1.249","neoForgeLoaderRange":"[4,)","neoForgeChannel":"stable"},
+  {"minecraft":"1.21.2","java":21,"fabricLoader":"0.19.3","fabricLoaderRange":">=0.16.0","neoForge":"21.2.1-beta","neoForgeLoaderRange":"[4,)","neoForgeChannel":"beta"},
+  {"minecraft":"1.21.3","java":21,"fabricLoader":"0.19.3","fabricLoaderRange":">=0.16.0","neoForge":"21.3.97","neoForgeLoaderRange":"[4,)","neoForgeChannel":"stable"},
+  {"minecraft":"1.21.4","java":21,"fabricLoader":"0.19.3","fabricLoaderRange":">=0.16.0","neoForge":"21.4.157","neoForgeLoaderRange":"[4,)","neoForgeChannel":"stable"},
+  {"minecraft":"1.21.5","java":21,"fabricLoader":"0.19.3","fabricLoaderRange":">=0.16.0","neoForge":"21.5.98","neoForgeLoaderRange":"[4,)","neoForgeChannel":"stable"},
+  {"minecraft":"1.21.6","java":21,"fabricLoader":"0.19.3","fabricLoaderRange":">=0.16.0","neoForge":"21.6.20-beta","neoForgeLoaderRange":"[4,)","neoForgeChannel":"beta"},
+  {"minecraft":"1.21.7","java":21,"fabricLoader":"0.19.3","fabricLoaderRange":">=0.16.0","neoForge":"21.7.25-beta","neoForgeLoaderRange":"[4,)","neoForgeChannel":"beta"},
+  {"minecraft":"1.21.8","java":21,"fabricLoader":"0.19.3","fabricLoaderRange":">=0.16.0","neoForge":"21.8.54","neoForgeLoaderRange":"[4,)","neoForgeChannel":"stable"},
+  {"minecraft":"1.21.9","java":21,"fabricLoader":"0.19.3","fabricLoaderRange":">=0.16.0","neoForge":"21.9.16-beta","neoForgeLoaderRange":"[4,)","neoForgeChannel":"beta"},
+  {"minecraft":"1.21.10","java":21,"fabricLoader":"0.19.3","fabricLoaderRange":">=0.16.0","neoForge":"21.10.64","neoForgeLoaderRange":"[4,)","neoForgeChannel":"stable"},
+  {"minecraft":"1.21.11","java":21,"fabricLoader":"0.19.3","fabricLoaderRange":">=0.16.0","neoForge":"21.11.45","neoForgeLoaderRange":"[4,)","neoForgeChannel":"stable"},
+  {"minecraft":"26.1","java":25,"fabricLoader":"0.19.3","fabricLoaderRange":">=0.18.0","neoForge":"26.1.0.19-beta","neoForgeLoaderRange":"[4,)","neoForgeChannel":"beta"},
+  {"minecraft":"26.1.1","java":25,"fabricLoader":"0.19.3","fabricLoaderRange":">=0.18.0","neoForge":"26.1.1.15-beta","neoForgeLoaderRange":"[4,)","neoForgeChannel":"beta"},
+  {"minecraft":"26.1.2","java":25,"fabricLoader":"0.19.3","fabricLoaderRange":">=0.18.0","neoForge":"26.1.2.100","neoForgeLoaderRange":"[4,)","neoForgeChannel":"stable"},
+  {"minecraft":"26.2","java":25,"fabricLoader":"0.19.3","fabricLoaderRange":">=0.19.0","neoForge":"26.2.0.75","neoForgeLoaderRange":"[4,)","neoForgeChannel":"stable"}
+]

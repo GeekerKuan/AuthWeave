@@ -1,0 +1,74 @@
+architectury {
+    platformSetupLoomIde()
+    neoForge()
+}
+
+def requiresProductionRemap = !minecraft_version.startsWith('26.')
+
+configurations {
+    common
+    shadowCommon
+    compileClasspath.extendsFrom common
+    runtimeClasspath.extendsFrom common
+    developmentNeoForge.extendsFrom common
+}
+
+dependencies {
+    common(project(path: ':common')) { transitive false }
+    shadowCommon(project(path: ':common', configuration: 'transformProductionNeoForge')) { transitive false }
+    neoForge "net.neoforged:neoforge:${neoforge_version}"
+}
+
+processResources {
+    from(project(':common').file('src/main/resources/assets')) {
+        into 'assets'
+    }
+    inputs.properties(rootProject.properties.findAll { it.key in [
+        'mod_id', 'mod_name', 'mod_description', 'mod_author', 'mod_license',
+        'version', 'minecraft_version', 'neoforge_version', 'neoforge_loader_range'
+    ]})
+    filesMatching('META-INF/neoforge.mods.toml') {
+        expand(rootProject.properties)
+    }
+    filesMatching('serverloginprofiles-neoforge.mixins.json') {
+        expand(mixin_java_level: "JAVA_${java_version}")
+    }
+}
+
+jar {
+    archiveAppendix = project.name
+    archiveClassifier = 'dev'
+}
+
+shadowJar {
+    dependsOn jar
+    mainSpec.sourcePaths.clear()
+    from zipTree(jar.archiveFile)
+    exclude 'fabric.mod.json'
+    exclude 'serverloginprofiles.mixins.json'
+    exclude 'serverloginprofiles-common-refmap.json'
+    configurations = [project.configurations.shadowCommon]
+    archiveAppendix = project.name
+    if (requiresProductionRemap) archiveClassifier = 'dev-shadow'
+    else archiveClassifier.unset()
+}
+
+if (requiresProductionRemap) {
+    remapJar {
+        dependsOn shadowJar
+        inputFile.set(shadowJar.archiveFile)
+        archiveAppendix = project.name
+        archiveClassifier.unset()
+    }
+}
+
+configurations {
+    apiElements {
+        outgoing.artifacts.clear()
+        outgoing.artifact(requiresProductionRemap ? remapJar : shadowJar)
+    }
+    runtimeElements {
+        outgoing.artifacts.clear()
+        outgoing.artifact(requiresProductionRemap ? remapJar : shadowJar)
+    }
+}

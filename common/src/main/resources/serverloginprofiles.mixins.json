@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.serverloginprofiles.mixin",
+  ${mixin_refmap_line}"compatibilityLevel": "${mixin_java_level}",
+  "client": [
+    "ClientLanguageMixin",
+    "ConnectScreenMixin",
+    "ManageServerScreenMixin",
+    "MinecraftBridge",
+    "MinecraftLifecycleMixin",
+    "ServerDataMixin",
+    "SkinCacheServiceMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
