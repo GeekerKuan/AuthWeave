@@ -20,7 +20,7 @@ if (requestedTarget != null) {
         configuredProject.ext.neoforge_version = target.neoForge
         configuredProject.ext.neoforge_loader_range = target.neoForgeLoaderRange
     }
-    rootProject.version = "0.1.0+${target.minecraft}"
+    rootProject.version = "0.1.1+${target.minecraft}"
 }
 
 architectury { minecraft = minecraft_version }
