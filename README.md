@@ -1,6 +1,6 @@
-# Server Login Profiles
+# AuthWeave
 
-Server Login Profiles is a standalone, client-side Minecraft mod for assigning a different identity to every saved
+**AuthWeave — Per-Server Login Profiles** is a standalone, client-side Minecraft mod for assigning a different identity to every saved
 multiplayer server. It has no dependency on Auth Me, ViaFabricPlus, Fabric API, or another authentication mod.
 
 ## Features

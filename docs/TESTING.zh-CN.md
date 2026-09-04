@@ -6,7 +6,7 @@
 2. Minecraft 1.21.5 + NeoForge：新版 NBT 接口与旧 UI 的组合。
 3. Minecraft 1.21.9 + Fabric：现代 UI、会话和 Authlib 接口的起点。
 
-每个实例只安装对应版本的 Server Login Profiles；本模组不需要 Fabric API、Architectury API、Auth Me 或
+每个实例只安装对应版本的 AuthWeave；本模组不需要 Fabric API、Architectury API、Auth Me 或
 ViaFabricPlus。可以保留整合包中的其他模组做第二轮冲突测试，但第一轮建议只加载本模组。
 
 ## 操作步骤

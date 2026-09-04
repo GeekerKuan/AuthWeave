@@ -47,8 +47,8 @@ jobs:
           TARGET_VERSION: ${{ matrix.minecraft }}
       - uses: actions/upload-artifact@v4
         with:
-          name: server-login-profiles-${{ matrix.minecraft }}
+          name: authweave-${{ matrix.minecraft }}
           path: |
-            fabric/build/libs/server-login-profiles-fabric-0.1.0+${{ matrix.minecraft }}.jar
-            neoforge/build/libs/server-login-profiles-neoforge-0.1.0+${{ matrix.minecraft }}.jar
+            fabric/build/libs/authweave-fabric-0.1.1+${{ matrix.minecraft }}.jar
+            neoforge/build/libs/authweave-neoforge-0.1.1+${{ matrix.minecraft }}.jar
           if-no-files-found: error

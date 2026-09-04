@@ -10,7 +10,7 @@ import java.util.concurrent.Executors;
 public final class YggdrasilHttp
 {
     private static final ExecutorService EXECUTOR = Executors.newThreadPerTaskExecutor(
-        Thread.ofVirtual().name("server-login-profiles-network-", 0).factory()
+        Thread.ofVirtual().name("authweave-network-", 0).factory()
     );
     static final HttpClient CLIENT = HttpClient.newBuilder()
         .connectTimeout(Duration.ofSeconds(10))

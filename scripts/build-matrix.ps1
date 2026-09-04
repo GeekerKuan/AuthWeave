@@ -42,7 +42,7 @@ foreach ($target in $selected) {
     foreach ($loader in @('fabric', 'neoforge')) {
         if ($Platform -ne 'all' -and $Platform -ne $loader) { continue }
         $libDir = Join-Path $projectRoot "$loader\build\libs"
-        Get-ChildItem -LiteralPath $libDir -Filter "server-login-profiles-$loader-*.jar" |
+        Get-ChildItem -LiteralPath $libDir -Filter "authweave-$loader-*.jar" |
             Where-Object { $_.Name -notmatch '-dev(?:-shadow)?\.jar$' } |
             Copy-Item -Destination $targetDir -Force
     }

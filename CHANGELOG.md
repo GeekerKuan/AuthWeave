@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1
+
+- Renamed the project to **AuthWeave — Per-Server Login Profiles**.
+- Kept the `serverloginprofiles` mod ID and existing configuration keys for backward compatibility.
+
 ## 0.1.0
 
 - Added independent official, offline, and custom Yggdrasil identities for each saved multiplayer server.

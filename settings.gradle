@@ -9,7 +9,7 @@ pluginManagement {
     }
 }
 
-rootProject.name = 'server-login-profiles'
+rootProject.name = 'authweave'
 include 'common'
 
 def requestedPlatforms = providers.gradleProperty('enabled_platforms')

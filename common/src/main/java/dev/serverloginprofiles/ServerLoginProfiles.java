@@ -9,13 +9,13 @@ public final class ServerLoginProfiles
     /** Stable mod identifier. */
     public static final String ID = "serverloginprofiles";
     /** Shared logger. */
-    public static final Logger LOG = LoggerFactory.getLogger("Server Login Profiles");
+    public static final Logger LOG = LoggerFactory.getLogger("AuthWeave");
 
     private ServerLoginProfiles() {}
 
     /** Called by each loader after mixins have been registered. */
     public static void initialize()
     {
-        LOG.info("Server Login Profiles is ready");
+        LOG.info("AuthWeave is ready");
     }
 }
