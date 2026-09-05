@@ -6,6 +6,7 @@
   "description": "${mod_description}",
   "authors": ["${mod_author}"],
   "license": "${mod_license}",
+  "icon": "authweave-icon.png",
   "environment": "client",
   "entrypoints": {
     "client": ["dev.serverloginprofiles.fabric.ServerLoginProfilesFabric"]

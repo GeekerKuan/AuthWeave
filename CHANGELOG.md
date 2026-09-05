@@ -3,6 +3,7 @@
 ## 0.1.1
 
 - Renamed the project to **AuthWeave — Per-Server Login Profiles**.
+- Added the AuthWeave project and in-game mod-list icon.
 - Kept the `serverloginprofiles` mod ID and existing configuration keys for backward compatibility.
 
 ## 0.1.0
